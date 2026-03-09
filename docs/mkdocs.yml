@@ -1,0 +1,5 @@
+site_name: Board 
+nav:
+  - Home: index.md
+  - Board: board.md
+theme: readthedocs
