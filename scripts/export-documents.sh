@@ -1,6 +1,6 @@
 #!/bin/bash
 # Referencing https://docs.kicad.org/9.0/en/cli/cli.html
-EXPORT_PATH="./outputs"
+EXPORT_PATH="./hardware/outputs"
 
 rm -r $EXPORT_PATH
 

@@ -13,7 +13,7 @@ jobs:
 
       - name: Exporting KiCAD PDFs
         run: |
-          EXPORT_PATH="./outputs"
+          EXPORT_PATH="./hardware/outputs"
           mkdir -p $EXPORT_PATH
           KICAD_PROJECTS=$(find . -name *.kicad_pro)
           PROJECT_PATH=${KICAD_PROJECTS[0]%.kicad_pro}
@@ -31,4 +31,4 @@ jobs:
         uses: actions/upload-artifact@v6
         with:
           name: Schematics
-          path: ./outputs/schematics.pdf
+          path: "${EXPORT_PATH}/schematics.pdf"
