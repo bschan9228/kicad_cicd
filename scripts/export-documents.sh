@@ -29,6 +29,17 @@ kicad-cli sch export bom $SCHEMATIC_PATH -o "${EXPORT_PATH}/bom.csv" --group-by 
 kicad-cli pcb export gerbers $PCB_PATH -o "${EXPORT_PATH}/gerbers" --board-plot-params
 kicad-cli pcb export drill $PCB_PATH -o "${EXPORT_PATH}/gerbers" --excellon-separate-th
 
-# Non-essentials: PCB cutout
+# Positions for PnP production
+kicad-cli pcb export pos $PCB_PATH --format csv --side front -o "${EXPORT_PATH}/gerbers/top-pos.csv"
+kicad-cli pcb export pos $PCB_PATH --format csv --side back -o "${EXPORT_PATH}/gerbers/bottom-pos.csv"
+POSITION_CSV_COLUMNS="Designator,Value,Footprint,Mid X,Mid Y, Rotation,Layer"
+sed -i "1s/.*/$POSITION_CSV_COLUMNS/" "${EXPORT_PATH}/gerbers/top-pos.csv"
+sed -i "1s/.*/$POSITION_CSV_COLUMNS/" "${EXPORT_PATH}/gerbers/bottom-pos.csv"
+
+# Mounting: PCB cutout, 3D model
 kicad-cli pcb export dxf $PCB_PATH -o $EXPORT_PATH --layers "Edge.Cuts" --drill-shape-opt 2
 mv "${EXPORT_PATH}"/*.dxf "${EXPORT_PATH}/cutout.dxf"
+
+kicad-cli pcb export step --include-tracks --include-pads --include-zones \
+ --include-inner-copper --include-silkscreen --include-soldermask --grid-origin --no-dnp $PCB_PATH \
+ -o "${EXPORT_PATH}/3d_model.step"
