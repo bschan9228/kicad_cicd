@@ -656,6 +656,10 @@
     [
       "0b85b844-2f62-47f8-85c0-b274be88892e",
       "Root"
+    ],
+    [
+      "6be84ad4-9d77-4ba6-a41d-1fc6f130651a",
+      "Holes and fiducials"
     ]
   ],
   "text_variables": {}
