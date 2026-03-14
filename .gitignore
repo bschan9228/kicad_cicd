@@ -40,6 +40,7 @@ fp-info-cache
 # Local project settings
 *.kicad_prl
 
+# outputs should be ignored in a project
 # /outputs/
 ##############################
 # mkdocs

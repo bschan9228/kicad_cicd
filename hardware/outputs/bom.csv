@@ -4,3 +4,4 @@
 "D2","LED_Small","","LED_THT:LED_D3.0mm",""
 "R1","R_Small","","Resistor_SMD:R_0805_2012Metric","DNP"
 "R2","R_Small","","Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",""
+"TP1","TestPoint","","TestPoint:TestPoint_Keystone_5015_Micro_Mini",""
