@@ -1,8 +1,9 @@
 #!/bin/bash
 # Referencing https://docs.kicad.org/9.0/en/cli/cli.html
-EXPORT_PATH="./hardware/outputs"
+CURR_PATH=$(dirname "$0")
+EXPORT_PATH="${CURR_PATH}/../hardware/outputs"
 
-rm -r $EXPORT_PATH
+rm -rf $EXPORT_PATH
 
 KICAD_PROJECT=$(find . -name *kicad_pro)
 PROJECT_PATH=${KICAD_PROJECT[0]%.kicad_pro}
@@ -32,7 +33,6 @@ kicad-cli pcb export drill $PCB_PATH -o "${EXPORT_PATH}/gerbers" --excellon-sepa
 # Testpoint locations
 kicad-cli sch export netlist $SCH_PATH -o ${EXPORT_PATH}/temp_netlist.kicadsexpr #temp file
 EXTRACTED_TEST_POINTS=$(grep -P 'node \(ref "(TP|JP)\d' -A 1 ${EXPORT_PATH}/temp_netlist.kicadsexpr)
-# TEST_POINTS=$(echo "$EXTRACTED_TEST_POINTS" | grep -oP '(node \(ref \"\K(TP|JP)[0-9]+)|(name \"\K([^"]+))')
 TEST_POINTS=$(echo "$EXTRACTED_TEST_POINTS" | grep -oP 'node[^"]+"\K[^"]+|name[^"]"\K[^"]+')
 
 mapfile -t lines <<< "$TEST_POINTS"
