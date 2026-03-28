@@ -1,14 +1,15 @@
 #!/bin/bash
 # Referencing https://docs.kicad.org/9.0/en/cli/cli.html
 CURR_PATH=$(dirname "$0")
-EXPORT_PATH="${CURR_PATH}/../hardware/outputs"
-
-rm -rf $EXPORT_PATH
 
 KICAD_PROJECT=$(find . -name *kicad_pro)
 PROJECT_PATH=${KICAD_PROJECT[0]%.kicad_pro}
 SCH_PATH="${PROJECT_PATH}.kicad_sch"
 PCB_PATH="${PROJECT_PATH}.kicad_pcb"
+
+EXPORT_PATH="${PROJECT_PATH}/../outputs"
+
+rm -rf $EXPORT_PATH
 
 # TODO: would be nice to make it do more than 1 project
 # PDFs are good for a single file for reading, SVGs better for larger documentation
