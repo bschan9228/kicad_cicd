@@ -51,7 +51,7 @@ sed -i "1s/.*/$POSITION_CSV_COLUMNS/" "${EXPORT_PATH}/positions/top-pos.csv"
 sed -i "1s/.*/$POSITION_CSV_COLUMNS/" "${EXPORT_PATH}/positions/bottom-pos.csv"
 
 # Mounting: PCB cutout, 3D model
-kicad-cli pcb export dxf $PCB_PATH -o $EXPORT_PATH --layers "Edge.Cuts" --drill-shape-opt 2
+kicad-cli pcb export dxf $PCB_PATH -o $EXPORT_PATH --layers "Edge.Cuts" --out mm --drill-shape-opt 2
 mv "${EXPORT_PATH}"/*.dxf "${EXPORT_PATH}/cutout.dxf"
 
 kicad-cli pcb export step --include-tracks --include-pads --include-zones \
