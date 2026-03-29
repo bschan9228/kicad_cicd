@@ -40,8 +40,13 @@ fp-info-cache
 # Local project settings
 *.kicad_prl
 
-# outputs should be ignored in a project
+# outputs could be ignored in a project
 # /outputs/
+
+# TODO: check on library tables?
+# fp-lib-table
+# sym-lib-table
+
 ##############################
 # mkdocs
 /site

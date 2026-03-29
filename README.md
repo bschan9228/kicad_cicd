@@ -3,6 +3,7 @@ ci/cd scripts for kicad
 
 ## todo:
   - better naming semantics for files
+  - makefile
   - remove unused hierarchial schematics/orphaned sheets - `./scrips/delete-unused-schematics.sh`
 
 ## interesting / useful repos

@@ -7,8 +7,6 @@ PROJECT_PATH=${KICAD_PROJECT[0]%.kicad_pro}
 SCH_PATH="${PROJECT_PATH}.kicad_sch"
 PCB_PATH="${PROJECT_PATH}.kicad_pcb"
 
-# EXPORT_PATH="${PROJECT_PATH}/../outputs"
-# EXPORT_PATH="$realpath -m ${PROJECT_PATH}/../outputs"
 EXPORT_PATH="$(realpath -m "${PROJECT_PATH}/../outputs")"
 
 rm -rf $EXPORT_PATH
@@ -20,7 +18,7 @@ rm -rf $EXPORT_PATH
 kicad-cli sch export pdf $SCH_PATH -o "${EXPORT_PATH}/schematics.pdf"
 
 EXPORT_LAYERS="B.Cu,F.Cu,B.SilkS,F.SilkS,Edge.Cuts,B.Fab,F.Fab,User.Drawings"
-kicad-cli pcb export pdf $PCB_PATH -o "${EXPORT_PATH}/pcb.pdf" -l $EXPORT_LAYERS
+kicad-cli pcb export pdf $PCB_PATH -o "${EXPORT_PATH}/layout.pdf" -l $EXPORT_LAYERS
 
 # SVGs: schematic & pcb svgs
 SVG_PATH="${EXPORT_PATH}/svgs"
