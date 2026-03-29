@@ -7,7 +7,9 @@ PROJECT_PATH=${KICAD_PROJECT[0]%.kicad_pro}
 SCH_PATH="${PROJECT_PATH}.kicad_sch"
 PCB_PATH="${PROJECT_PATH}.kicad_pcb"
 
-EXPORT_PATH="${PROJECT_PATH}/../outputs"
+# EXPORT_PATH="${PROJECT_PATH}/../outputs"
+# EXPORT_PATH="$realpath -m ${PROJECT_PATH}/../outputs"
+EXPORT_PATH="$(realpath -m "${PROJECT_PATH}/../outputs")"
 
 rm -rf $EXPORT_PATH
 
