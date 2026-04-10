@@ -1,4 +1,6 @@
 Reference,Net
-JP1,GND
-TP1,MCU_SCLK
-JP1,Net-(D1-A)
+JP1,/Holes and fiducials1/SCLK
+JP2,GND
+TP1,TP2
+MCU_SCLK,JP1
+JP2,Net-(D1-A)

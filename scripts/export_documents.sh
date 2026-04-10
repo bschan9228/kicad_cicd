@@ -27,7 +27,7 @@ kicad-cli pcb export svg $PCB_PATH -o "${SVG_PATH}/pcb.svg" --mode-single -l $EX
 
 # Production: BOM, gerbers, drill files
 kicad-cli sch export bom $SCH_PATH -o "${EXPORT_PATH}/bom.csv" --group-by "Part Number,Reference,Value,Footprint,\${DNP}" \
---ref-range-delimiter --fields "Reference,Value,Part Number,Footprint,\${DNP}"
+--ref-range-delimiter --fields "Reference,\${QUANTITY},Value,\${DNP},Part Number,URL,Footprint"
 kicad-cli pcb export gerbers $PCB_PATH -o "${EXPORT_PATH}/gerbers" --board-plot-params
 kicad-cli pcb export drill $PCB_PATH -o "${EXPORT_PATH}/gerbers" --excellon-separate-th
 
@@ -51,9 +51,12 @@ sed -i "1s/.*/$POSITION_CSV_COLUMNS/" "${EXPORT_PATH}/positions/top-pos.csv"
 sed -i "1s/.*/$POSITION_CSV_COLUMNS/" "${EXPORT_PATH}/positions/bottom-pos.csv"
 
 # Mounting: PCB cutout, 3D model
-kicad-cli pcb export dxf $PCB_PATH -o $EXPORT_PATH --layers "Edge.Cuts" --out mm --drill-shape-opt 2
+kicad-cli pcb export dxf $PCB_PATH -o $EXPORT_PATH --layers "Edge.Cuts" --ou mm --drill-shape-opt 2
 mv "${EXPORT_PATH}"/*.dxf "${EXPORT_PATH}/cutout.dxf"
 
 kicad-cli pcb export step --include-tracks --include-pads --include-zones \
  --include-inner-copper --include-silkscreen --include-soldermask --grid-origin --no-dnp $PCB_PATH \
  -o "${EXPORT_PATH}/3d_model.step"
+
+# PCB DRC
+kicad-cli pcb drc --output "${EXPORT_PATH}/drc.rpt" "${PCB_PATH}"

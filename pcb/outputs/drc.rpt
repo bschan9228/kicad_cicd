@@ -1,0 +1,122 @@
+** Drc report for sample_project.kicad_pcb **
+** Created on 2026-04-09T23:19:37-0700 **
+
+** Found 28 DRC violations **
+[clearance]: Clearance violation (zone clearance 0.5000 mm; actual 0.0000 mm)
+    Local override; error
+    @(143.1000 mm, 125.2500 mm): PTH pad 1 [unconnected-(H2-Pad1)] of H2
+    @(106.5000 mm, 86.2500 mm): Zone [GND] on F.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(143.1000 mm, 125.2500 mm): PTH pad 1 [unconnected-(H2-Pad1)] of H2
+    @(106.5000 mm, 86.2500 mm): Zone [GND] on F.Cu
+[clearance]: Clearance violation (zone clearance 0.5000 mm; actual 0.0000 mm)
+    Local override; error
+    @(143.8029 mm, 123.5529 mm): PTH pad 1 [unconnected-(H2-Pad1)] of H2
+    @(106.5000 mm, 86.2500 mm): Zone [GND] on F.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(143.8029 mm, 123.5529 mm): PTH pad 1 [unconnected-(H2-Pad1)] of H2
+    @(106.5000 mm, 86.2500 mm): Zone [GND] on F.Cu
+[clearance]: Clearance violation (zone clearance 0.5000 mm; actual 0.0000 mm)
+    Local override; error
+    @(143.8029 mm, 126.9471 mm): PTH pad 1 [unconnected-(H2-Pad1)] of H2
+    @(106.5000 mm, 86.2500 mm): Zone [GND] on F.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(143.8029 mm, 126.9471 mm): PTH pad 1 [unconnected-(H2-Pad1)] of H2
+    @(106.5000 mm, 86.2500 mm): Zone [GND] on F.Cu
+[clearance]: Clearance violation (zone clearance 0.5000 mm; actual 0.0000 mm)
+    Local override; error
+    @(145.5000 mm, 122.8500 mm): PTH pad 1 [unconnected-(H2-Pad1)] of H2
+    @(106.5000 mm, 86.2500 mm): Zone [GND] on F.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(145.5000 mm, 122.8500 mm): PTH pad 1 [unconnected-(H2-Pad1)] of H2
+    @(106.5000 mm, 86.2500 mm): Zone [GND] on F.Cu
+[clearance]: Clearance violation (zone clearance 0.5000 mm; actual 0.0000 mm)
+    Local override; error
+    @(145.5000 mm, 125.2500 mm): PTH pad 1 [unconnected-(H2-Pad1)] of H2
+    @(106.5000 mm, 86.2500 mm): Zone [GND] on F.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(145.5000 mm, 125.2500 mm): PTH pad 1 [unconnected-(H2-Pad1)] of H2
+    @(106.5000 mm, 86.2500 mm): Zone [GND] on F.Cu
+[clearance]: Clearance violation (zone clearance 0.5000 mm; actual 0.0000 mm)
+    Local override; error
+    @(145.5000 mm, 127.6500 mm): PTH pad 1 [unconnected-(H2-Pad1)] of H2
+    @(106.5000 mm, 86.2500 mm): Zone [GND] on F.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(145.5000 mm, 127.6500 mm): PTH pad 1 [unconnected-(H2-Pad1)] of H2
+    @(106.5000 mm, 86.2500 mm): Zone [GND] on F.Cu
+[clearance]: Clearance violation (zone clearance 0.5000 mm; actual 0.0000 mm)
+    Local override; error
+    @(147.1971 mm, 123.5529 mm): PTH pad 1 [unconnected-(H2-Pad1)] of H2
+    @(106.5000 mm, 86.2500 mm): Zone [GND] on F.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(147.1971 mm, 123.5529 mm): PTH pad 1 [unconnected-(H2-Pad1)] of H2
+    @(106.5000 mm, 86.2500 mm): Zone [GND] on F.Cu
+[clearance]: Clearance violation (zone clearance 0.5000 mm; actual 0.0000 mm)
+    Local override; error
+    @(147.1971 mm, 126.9471 mm): PTH pad 1 [unconnected-(H2-Pad1)] of H2
+    @(106.5000 mm, 86.2500 mm): Zone [GND] on F.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(147.1971 mm, 126.9471 mm): PTH pad 1 [unconnected-(H2-Pad1)] of H2
+    @(106.5000 mm, 86.2500 mm): Zone [GND] on F.Cu
+[clearance]: Clearance violation (zone clearance 0.5000 mm; actual 0.0000 mm)
+    Local override; error
+    @(147.9000 mm, 125.2500 mm): PTH pad 1 [unconnected-(H2-Pad1)] of H2
+    @(106.5000 mm, 86.2500 mm): Zone [GND] on F.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(147.9000 mm, 125.2500 mm): PTH pad 1 [unconnected-(H2-Pad1)] of H2
+    @(106.5000 mm, 86.2500 mm): Zone [GND] on F.Cu
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(106.5000 mm, 86.2500 mm): Segment on Edge.Cuts
+    @(145.0000 mm, 86.8500 mm): Reference field of H1
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(143.1000 mm, 125.2500 mm): PTH pad 1 [unconnected-(H2-Pad1)] of H2
+    @(106.5000 mm, 86.2500 mm): Zone [GND] on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(143.8029 mm, 123.5529 mm): PTH pad 1 [unconnected-(H2-Pad1)] of H2
+    @(106.5000 mm, 86.2500 mm): Zone [GND] on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(143.8029 mm, 126.9471 mm): PTH pad 1 [unconnected-(H2-Pad1)] of H2
+    @(106.5000 mm, 86.2500 mm): Zone [GND] on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(145.5000 mm, 122.8500 mm): PTH pad 1 [unconnected-(H2-Pad1)] of H2
+    @(106.5000 mm, 86.2500 mm): Zone [GND] on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(145.5000 mm, 125.2500 mm): PTH pad 1 [unconnected-(H2-Pad1)] of H2
+    @(106.5000 mm, 86.2500 mm): Zone [GND] on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(145.5000 mm, 127.6500 mm): PTH pad 1 [unconnected-(H2-Pad1)] of H2
+    @(106.5000 mm, 86.2500 mm): Zone [GND] on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(147.1971 mm, 123.5529 mm): PTH pad 1 [unconnected-(H2-Pad1)] of H2
+    @(106.5000 mm, 86.2500 mm): Zone [GND] on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(147.1971 mm, 126.9471 mm): PTH pad 1 [unconnected-(H2-Pad1)] of H2
+    @(106.5000 mm, 86.2500 mm): Zone [GND] on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(147.9000 mm, 125.2500 mm): PTH pad 1 [unconnected-(H2-Pad1)] of H2
+    @(106.5000 mm, 86.2500 mm): Zone [GND] on F.Cu
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** End of Report **
