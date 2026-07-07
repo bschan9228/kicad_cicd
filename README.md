@@ -1,5 +1,5 @@
 # About
-ci/cd scripts for kicad
+CI/CD scripts for kicad to automatically export schematics, PCB drawings, gerbers, 3d model, etc.
 
 ## todo:
   - better naming semantics for files
